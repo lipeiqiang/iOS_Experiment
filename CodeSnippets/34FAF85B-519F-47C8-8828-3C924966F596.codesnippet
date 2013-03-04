@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zldebugbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifdef DEBUG
+UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+[btn setTitle:@"debug&lt;#1#&gt;" forState:UIControlStateNormal];
+btn.titleLabel.font = [UIFont systemFontOfSize:8];
+btn.frame = CGRectMake(&lt;#100#&gt;,&lt;#0#&gt;,30,20);
+[btn addTarget:self action:@selector(&lt;#debugProc#&gt;) forControlEvents:UIControlEventTouchUpInside];
+[self.view addSubview:btn];
+#endif
+
+#ifdef DEBUG
+- (void)debugProc
+{
+    &lt;#...#&gt;
+}
+#endif
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>34FAF85B-519F-47C8-8828-3C924966F596</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ZIL Debug Button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

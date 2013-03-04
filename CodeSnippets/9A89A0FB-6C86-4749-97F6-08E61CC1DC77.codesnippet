@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zlframeedit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIView *hoge;
+CGRect hogeFrame = hoge.frame;
+CGRect hogeSuperFrame = hoge.superview.frame;
+hogeFrame.origin.x = roundf((hogeSuperFrame.size.width - hogeFrame.size.width) / 2);
+hogeFrame.origin.y = roundf((hogeSuperFrame.size.height - hogeFrame.size.height) / 2);
+hogeFrame.size.width = &lt;#100#&gt;;
+hogeFrame.size.height = &lt;#100#&gt;;
+hoge.frame = hogeFrame;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9A89A0FB-6C86-4749-97F6-08E61CC1DC77</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ZIL Frame Edit</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

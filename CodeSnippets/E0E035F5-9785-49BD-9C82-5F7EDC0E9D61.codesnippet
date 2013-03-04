@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zlkvo</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+//    [labelTitle addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+
+    
+    if ([keyPath isEqualToString:@"frame"]) {
+        CGRect frame = [[object valueForKeyPath:@"frame"] CGRectValue];
+        BLLog(@"%@ %@ %@",NSStringFromClass([object class]), keyPath , NSStringFromCGRect(frame));
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E0E035F5-9785-49BD-9C82-5F7EDC0E9D61</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ZIL KVO</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

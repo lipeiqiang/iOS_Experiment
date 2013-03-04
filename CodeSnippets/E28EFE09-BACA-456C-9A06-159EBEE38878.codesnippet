@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>iwakeyboaddidshow</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/*
+ // キーボード表示通知の登録
+ [[NSNotificationCenter defaultCenter] addObserver:self
+ selector:@selector(onKeyboardDidShow:)
+ name:UIKeyboardDidShowNotification
+ object:nil];
+ 
+ // キーボード消去通知の登録
+ [[NSNotificationCenter defaultCenter] addObserver:self
+ selector:@selector(onKeyboardDidHide:)
+ name:UIKeyboardDidHideNotification
+ object:nil];
+ 
+ // キーボード表示通知の登録解除
+ [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
+ 
+ // キーボード消去通知の登録解除
+ [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+ */
+
+// キーボード表示時
+- (void)onKeyboardDidShow:(NSNotification*)notification
+{
+    //キーボードのCGRect
+    CGRect keyboardRect = [[notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    &lt;#...#&gt;
+}
+
+// キーボード消去時
+- (void)onKeyboardDidHide:(NSNotification*)notification
+{
+    &lt;#...#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E28EFE09-BACA-456C-9A06-159EBEE38878</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Keyboad Did Show</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

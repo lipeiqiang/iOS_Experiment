@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FA0F50415F88364001B39A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA0F50315F88364001B39A6 /* UIKit.framework */; };
+		7FA0F50615F88364001B39A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA0F50515F88364001B39A6 /* Foundation.framework */; };
+		7FA0F50815F88364001B39A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA0F50715F88364001B39A6 /* CoreGraphics.framework */; };
+		7FA0F50E15F88364001B39A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0F50C15F88364001B39A6 /* InfoPlist.strings */; };
+		7FA0F51015F88364001B39A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0F50F15F88364001B39A6 /* main.m */; };
+		7FA0F51415F88364001B39A6 /* EXPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0F51315F88364001B39A6 /* EXPAppDelegate.m */; };
+		7FA0F51715F88364001B39A6 /* EXPLayerShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0F51615F88364001B39A6 /* EXPLayerShadowViewController.m */; };
+		7FA0F51A15F88365001B39A6 /* EXPLayerShadowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0F51815F88365001B39A6 /* EXPLayerShadowViewController.xib */; };
+		7FA0F52415F88AF2001B39A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA0F52315F88AF2001B39A6 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7FA0F4FF15F88364001B39A6 /* LayerShadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerShadow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA0F50315F88364001B39A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FA0F50515F88364001B39A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FA0F50715F88364001B39A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FA0F50B15F88364001B39A6 /* LayerShadow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayerShadow-Info.plist"; sourceTree = "<group>"; };
+		7FA0F50D15F88364001B39A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FA0F50F15F88364001B39A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FA0F51115F88364001B39A6 /* LayerShadow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayerShadow-Prefix.pch"; sourceTree = "<group>"; };
+		7FA0F51215F88364001B39A6 /* EXPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPAppDelegate.h; sourceTree = "<group>"; };
+		7FA0F51315F88364001B39A6 /* EXPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPAppDelegate.m; sourceTree = "<group>"; };
+		7FA0F51515F88364001B39A6 /* EXPLayerShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPLayerShadowViewController.h; sourceTree = "<group>"; };
+		7FA0F51615F88364001B39A6 /* EXPLayerShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPLayerShadowViewController.m; sourceTree = "<group>"; };
+		7FA0F51915F88365001B39A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EXPLayerShadowViewController.xib; sourceTree = "<group>"; };
+		7FA0F52315F88AF2001B39A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FA0F4FC15F88364001B39A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA0F52415F88AF2001B39A6 /* QuartzCore.framework in Frameworks */,
+				7FA0F50415F88364001B39A6 /* UIKit.framework in Frameworks */,
+				7FA0F50615F88364001B39A6 /* Foundation.framework in Frameworks */,
+				7FA0F50815F88364001B39A6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FA0F4F415F88364001B39A6 = {
+			isa = PBXGroup;
+			children = (
+				7FA0F50915F88364001B39A6 /* LayerShadow */,
+				7FA0F50215F88364001B39A6 /* Frameworks */,
+				7FA0F50015F88364001B39A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FA0F50015F88364001B39A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0F4FF15F88364001B39A6 /* LayerShadow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FA0F50215F88364001B39A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0F52315F88AF2001B39A6 /* QuartzCore.framework */,
+				7FA0F50315F88364001B39A6 /* UIKit.framework */,
+				7FA0F50515F88364001B39A6 /* Foundation.framework */,
+				7FA0F50715F88364001B39A6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA0F50915F88364001B39A6 /* LayerShadow */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0F51215F88364001B39A6 /* EXPAppDelegate.h */,
+				7FA0F51315F88364001B39A6 /* EXPAppDelegate.m */,
+				7FA0F51515F88364001B39A6 /* EXPLayerShadowViewController.h */,
+				7FA0F51615F88364001B39A6 /* EXPLayerShadowViewController.m */,
+				7FA0F51815F88365001B39A6 /* EXPLayerShadowViewController.xib */,
+				7FA0F50A15F88364001B39A6 /* Supporting Files */,
+			);
+			path = LayerShadow;
+			sourceTree = "<group>";
+		};
+		7FA0F50A15F88364001B39A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0F50B15F88364001B39A6 /* LayerShadow-Info.plist */,
+				7FA0F50C15F88364001B39A6 /* InfoPlist.strings */,
+				7FA0F50F15F88364001B39A6 /* main.m */,
+				7FA0F51115F88364001B39A6 /* LayerShadow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FA0F4FE15F88364001B39A6 /* LayerShadow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FA0F52015F88365001B39A6 /* Build configuration list for PBXNativeTarget "LayerShadow" */;
+			buildPhases = (
+				7FA0F4FB15F88364001B39A6 /* Sources */,
+				7FA0F4FC15F88364001B39A6 /* Frameworks */,
+				7FA0F4FD15F88364001B39A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LayerShadow;
+			productName = LayerShadow;
+			productReference = 7FA0F4FF15F88364001B39A6 /* LayerShadow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FA0F4F615F88364001B39A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EXP;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 7FA0F4F915F88364001B39A6 /* Build configuration list for PBXProject "LayerShadow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FA0F4F415F88364001B39A6;
+			productRefGroup = 7FA0F50015F88364001B39A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FA0F4FE15F88364001B39A6 /* LayerShadow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FA0F4FD15F88364001B39A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA0F50E15F88364001B39A6 /* InfoPlist.strings in Resources */,
+				7FA0F51A15F88365001B39A6 /* EXPLayerShadowViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FA0F4FB15F88364001B39A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA0F51015F88364001B39A6 /* main.m in Sources */,
+				7FA0F51415F88364001B39A6 /* EXPAppDelegate.m in Sources */,
+				7FA0F51715F88364001B39A6 /* EXPLayerShadowViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7FA0F50C15F88364001B39A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FA0F50D15F88364001B39A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FA0F51815F88365001B39A6 /* EXPLayerShadowViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FA0F51915F88365001B39A6 /* en */,
+			);
+			name = EXPLayerShadowViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FA0F51E15F88365001B39A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FA0F51F15F88365001B39A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FA0F52115F88365001B39A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LayerShadow/LayerShadow-Prefix.pch";
+				INFOPLIST_FILE = "LayerShadow/LayerShadow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FA0F52215F88365001B39A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LayerShadow/LayerShadow-Prefix.pch";
+				INFOPLIST_FILE = "LayerShadow/LayerShadow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FA0F4F915F88364001B39A6 /* Build configuration list for PBXProject "LayerShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FA0F51E15F88365001B39A6 /* Debug */,
+				7FA0F51F15F88365001B39A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FA0F52015F88365001B39A6 /* Build configuration list for PBXNativeTarget "LayerShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FA0F52115F88365001B39A6 /* Debug */,
+				7FA0F52215F88365001B39A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FA0F4F615F88364001B39A6 /* Project object */;
+}

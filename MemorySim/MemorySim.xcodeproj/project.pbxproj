@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F08CD1E168BFF2F007C6433 /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08CD1D168BFF2F007C6433 /* Stats.m */; };
+		7F8BE179168BF75500CF641B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8BE178168BF75500CF641B /* UIKit.framework */; };
+		7F8BE17B168BF75500CF641B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8BE17A168BF75500CF641B /* Foundation.framework */; };
+		7F8BE17D168BF75500CF641B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8BE17C168BF75500CF641B /* CoreGraphics.framework */; };
+		7F8BE183168BF75500CF641B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F8BE181168BF75500CF641B /* InfoPlist.strings */; };
+		7F8BE185168BF75500CF641B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8BE184168BF75500CF641B /* main.m */; };
+		7F8BE189168BF75500CF641B /* EXPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8BE188168BF75500CF641B /* EXPAppDelegate.m */; };
+		7F8BE18B168BF75500CF641B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F8BE18A168BF75500CF641B /* Default.png */; };
+		7F8BE18D168BF75500CF641B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F8BE18C168BF75500CF641B /* Default@2x.png */; };
+		7F8BE18F168BF75500CF641B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F8BE18E168BF75500CF641B /* Default-568h@2x.png */; };
+		7F8BE192168BF75500CF641B /* EXPMemoySimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8BE191168BF75500CF641B /* EXPMemoySimViewController.m */; };
+		7F8BE195168BF75500CF641B /* EXPMemoySimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F8BE193168BF75500CF641B /* EXPMemoySimViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F08CD1C168BFF2F007C6433 /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
+		7F08CD1D168BFF2F007C6433 /* Stats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stats.m; sourceTree = "<group>"; };
+		7F8BE174168BF75500CF641B /* MemorySim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorySim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8BE178168BF75500CF641B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F8BE17A168BF75500CF641B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F8BE17C168BF75500CF641B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F8BE180168BF75500CF641B /* MemorySim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemorySim-Info.plist"; sourceTree = "<group>"; };
+		7F8BE182168BF75500CF641B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F8BE184168BF75500CF641B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F8BE186168BF75500CF641B /* MemorySim-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemorySim-Prefix.pch"; sourceTree = "<group>"; };
+		7F8BE187168BF75500CF641B /* EXPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPAppDelegate.h; sourceTree = "<group>"; };
+		7F8BE188168BF75500CF641B /* EXPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPAppDelegate.m; sourceTree = "<group>"; };
+		7F8BE18A168BF75500CF641B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F8BE18C168BF75500CF641B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F8BE18E168BF75500CF641B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F8BE190168BF75500CF641B /* EXPMemoySimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMemoySimViewController.h; sourceTree = "<group>"; };
+		7F8BE191168BF75500CF641B /* EXPMemoySimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPMemoySimViewController.m; sourceTree = "<group>"; };
+		7F8BE194168BF75500CF641B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EXPMemoySimViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F8BE171168BF75500CF641B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8BE179168BF75500CF641B /* UIKit.framework in Frameworks */,
+				7F8BE17B168BF75500CF641B /* Foundation.framework in Frameworks */,
+				7F8BE17D168BF75500CF641B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F08CD1A168BFE7F007C6433 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7F08CD1B168BFF2F007C6433 /* Stats */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		7F08CD1B168BFF2F007C6433 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				7F08CD1C168BFF2F007C6433 /* Stats.h */,
+				7F08CD1D168BFF2F007C6433 /* Stats.m */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		7F8BE169168BF75500CF641B = {
+			isa = PBXGroup;
+			children = (
+				7F8BE17E168BF75500CF641B /* MemorySim */,
+				7F08CD1A168BFE7F007C6433 /* Libraries */,
+				7F8BE177168BF75500CF641B /* Frameworks */,
+				7F8BE175168BF75500CF641B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F8BE175168BF75500CF641B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F8BE174168BF75500CF641B /* MemorySim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F8BE177168BF75500CF641B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F8BE178168BF75500CF641B /* UIKit.framework */,
+				7F8BE17A168BF75500CF641B /* Foundation.framework */,
+				7F8BE17C168BF75500CF641B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F8BE17E168BF75500CF641B /* MemorySim */ = {
+			isa = PBXGroup;
+			children = (
+				7F8BE187168BF75500CF641B /* EXPAppDelegate.h */,
+				7F8BE188168BF75500CF641B /* EXPAppDelegate.m */,
+				7F8BE190168BF75500CF641B /* EXPMemoySimViewController.h */,
+				7F8BE191168BF75500CF641B /* EXPMemoySimViewController.m */,
+				7F8BE193168BF75500CF641B /* EXPMemoySimViewController.xib */,
+				7F8BE17F168BF75500CF641B /* Supporting Files */,
+			);
+			path = MemorySim;
+			sourceTree = "<group>";
+		};
+		7F8BE17F168BF75500CF641B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F8BE180168BF75500CF641B /* MemorySim-Info.plist */,
+				7F8BE181168BF75500CF641B /* InfoPlist.strings */,
+				7F8BE184168BF75500CF641B /* main.m */,
+				7F8BE186168BF75500CF641B /* MemorySim-Prefix.pch */,
+				7F8BE18A168BF75500CF641B /* Default.png */,
+				7F8BE18C168BF75500CF641B /* Default@2x.png */,
+				7F8BE18E168BF75500CF641B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F8BE173168BF75500CF641B /* MemorySim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F8BE198168BF75500CF641B /* Build configuration list for PBXNativeTarget "MemorySim" */;
+			buildPhases = (
+				7F8BE170168BF75500CF641B /* Sources */,
+				7F8BE171168BF75500CF641B /* Frameworks */,
+				7F8BE172168BF75500CF641B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemorySim;
+			productName = MemorySim;
+			productReference = 7F8BE174168BF75500CF641B /* MemorySim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F8BE16B168BF75500CF641B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EXP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = jiroiwas;
+			};
+			buildConfigurationList = 7F8BE16E168BF75500CF641B /* Build configuration list for PBXProject "MemorySim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F8BE169168BF75500CF641B;
+			productRefGroup = 7F8BE175168BF75500CF641B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F8BE173168BF75500CF641B /* MemorySim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F8BE172168BF75500CF641B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8BE183168BF75500CF641B /* InfoPlist.strings in Resources */,
+				7F8BE18B168BF75500CF641B /* Default.png in Resources */,
+				7F8BE18D168BF75500CF641B /* Default@2x.png in Resources */,
+				7F8BE18F168BF75500CF641B /* Default-568h@2x.png in Resources */,
+				7F8BE195168BF75500CF641B /* EXPMemoySimViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F8BE170168BF75500CF641B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8BE185168BF75500CF641B /* main.m in Sources */,
+				7F8BE189168BF75500CF641B /* EXPAppDelegate.m in Sources */,
+				7F8BE192168BF75500CF641B /* EXPMemoySimViewController.m in Sources */,
+				7F08CD1E168BFF2F007C6433 /* Stats.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F8BE181168BF75500CF641B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F8BE182168BF75500CF641B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F8BE193168BF75500CF641B /* EXPMemoySimViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F8BE194168BF75500CF641B /* en */,
+			);
+			name = EXPMemoySimViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F8BE196168BF75500CF641B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F8BE197168BF75500CF641B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F8BE199168BF75500CF641B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemorySim/MemorySim-Prefix.pch";
+				INFOPLIST_FILE = "MemorySim/MemorySim-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F8BE19A168BF75500CF641B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemorySim/MemorySim-Prefix.pch";
+				INFOPLIST_FILE = "MemorySim/MemorySim-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F8BE16E168BF75500CF641B /* Build configuration list for PBXProject "MemorySim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8BE196168BF75500CF641B /* Debug */,
+				7F8BE197168BF75500CF641B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F8BE198168BF75500CF641B /* Build configuration list for PBXNativeTarget "MemorySim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8BE199168BF75500CF641B /* Debug */,
+				7F8BE19A168BF75500CF641B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F8BE16B168BF75500CF641B /* Project object */;
+}
