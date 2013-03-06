@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:iPhoneOnly/iPhoneOnly.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextView/TextView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Thread/Thread.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Transform/Transform.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Universal/Universal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WebView/WebView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AffineTransform/AffineTransform.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoRotate/AutoRotate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CommandLine/CommandLine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreText/CoreText.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Empty/Empty.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HelloWorld/HelloWorld.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Icon/Icon.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LayerShadow/LayerShadow.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Leak/Leak.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MasterDetail/MasterDetail.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Memory/Memory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MemorySim/MemorySim.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modal/Modal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Picker/Picker.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Resize/Resize.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StoryBoard/StoryBoard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TableView/TableView.xcodeproj">
+   </FileRef>
+</Workspace>
