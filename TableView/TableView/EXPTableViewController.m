@@ -8,6 +8,7 @@
 
 #import "EXPTableViewController.h"
 #import "EXPTableAViewController.h"
+#import "EXPTableBViewController.h"
 
 @interface EXPTableViewController ()
 
@@ -32,6 +33,8 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 - (IBAction)openTableBAction:(id)sender {
+    UIViewController *controller = [[EXPTableBViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];    
 }
 - (IBAction)openTableCAction:(id)sender {
 }

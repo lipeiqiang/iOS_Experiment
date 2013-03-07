@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382612AF16E7219C003F3CBD /* EXPTableBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382612AE16E7219C003F3CBD /* EXPTableBViewController.m */; };
 		399DA406169DAD4A008AE4D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399DA405169DAD4A008AE4D4 /* UIKit.framework */; };
 		399DA408169DAD4A008AE4D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399DA407169DAD4A008AE4D4 /* Foundation.framework */; };
 		399DA40A169DAD4A008AE4D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399DA409169DAD4A008AE4D4 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		382612AD16E7219C003F3CBD /* EXPTableBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPTableBViewController.h; sourceTree = "<group>"; };
+		382612AE16E7219C003F3CBD /* EXPTableBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPTableBViewController.m; sourceTree = "<group>"; };
 		399DA401169DAD4A008AE4D4 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399DA405169DAD4A008AE4D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		399DA407169DAD4A008AE4D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,8 @@
 				399DA428169DAFD3008AE4D4 /* EXPTableAViewController.h */,
 				399DA429169DAFD3008AE4D4 /* EXPTableAViewController.m */,
 				399DA42A169DAFD3008AE4D4 /* EXPTableAViewController.xib */,
+				382612AD16E7219C003F3CBD /* EXPTableBViewController.h */,
+				382612AE16E7219C003F3CBD /* EXPTableBViewController.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				399DA416169DAD4A008AE4D4 /* EXPAppDelegate.m in Sources */,
 				399DA41F169DAD4A008AE4D4 /* EXPTableViewController.m in Sources */,
 				399DA42B169DAFD3008AE4D4 /* EXPTableAViewController.m in Sources */,
+				382612AF16E7219C003F3CBD /* EXPTableBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +309,7 @@
 				399DA427169DAD4A008AE4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
