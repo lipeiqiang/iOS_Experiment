@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:CodeSnippets"
+      name = "CodeSnippets">
+      <FileRef
+         location = "group:178403C5-9A2C-4B25-BC57-1D5BEEC1D904.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:34FAF85B-519F-47C8-8828-3C924966F596.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:6497CA8A-D7E6-490A-9A76-898BFF50E4EA.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:78DE64CD-999F-4430-9ADD-AC1C2E1E7185.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:97C3FD96-4389-4072-8712-B2CCC47E6787.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:9A89A0FB-6C86-4749-97F6-08E61CC1DC77.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:B4AD7986-24A4-407D-A918-1390C747F6A7.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:CFF6F09F-514B-4399-9FDD-C55EFB40EAD5.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:D0F28477-6E09-41D1-BB60-0EB7802DC990.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:E0E035F5-9785-49BD-9C82-5F7EDC0E9D61.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:E28EFE09-BACA-456C-9A06-159EBEE38878.codesnippet">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Memory/Memory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Thread/Thread.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HelloWorld/HelloWorld.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CommandLine/CommandLine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Empty/Empty.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Leak/Leak.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreText/CoreText.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StoryBoard/StoryBoard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Picker/Picker.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MasterDetail/MasterDetail.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TableView/TableView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MemorySim/MemorySim.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iPhoneOnly/iPhoneOnly.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Icon/Icon.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modal/Modal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Universal/Universal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Resize/Resize.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WebView/WebView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoRotate/AutoRotate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextView/TextView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AffineTransform/AffineTransform.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LayerShadow/LayerShadow.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Transform/Transform.xcodeproj">
+   </FileRef>
+</Workspace>
