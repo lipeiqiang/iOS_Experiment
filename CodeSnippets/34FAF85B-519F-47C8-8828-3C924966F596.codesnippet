@@ -31,7 +31,7 @@ btn.frame = CGRectMake(&lt;#100#&gt;,&lt;#0#&gt;,30,20);
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ZIL Debug Button</string>
+	<string>ZL Debug Button</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

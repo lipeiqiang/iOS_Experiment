@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Files/Files.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DocInteractRecv/DocInteractRecv.xcodeproj">
    </FileRef>
    <FileRef
