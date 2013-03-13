@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zldeluitextview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark -#pragma UITextView Delegate- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{    return YES;}- (BOOL)textViewShouldEndEditing:(UITextView *)textView{    return YES;}- (void)textViewDidBeginEditing:(UITextView *)textView{}- (void)textViewDidEndEditing:(UITextView *)textView{}- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{    return YES;}- (void)textViewDidChange:(UITextView *)textView{}- (void)textViewDidChangeSelection:(UITextView *)textView{}
+    
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6E902FC8-5E12-41B7-A336-40C4AAF81668</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ZL Delegate UITextView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
