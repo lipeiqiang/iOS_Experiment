@@ -25,6 +25,21 @@
     // Input Accessory View
     _textView.inputAccessoryView = _accessoryToolBar;
     
+    
+    // Navigation Item
+    UIBarButtonItem *openDocButton = [[UIBarButtonItem alloc] initWithTitle:@"doc"
+                                                                      style:UIBarButtonItemStylePlain
+                                                                     target:self
+                                                                     action:nil];
+    
+    UIBarButtonItem *openCacheButton = [[UIBarButtonItem alloc] initWithTitle:@"cache"
+                                                                        style:UIBarButtonItemStylePlain
+                                                                       target:self
+                                                                       action:nil];
+    
+    NSArray *rightBarButtonItems = @[openDocButton, openCacheButton];
+    [_navigationBar.topItem setRightBarButtonItems:rightBarButtonItems];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +61,8 @@
     [self presentViewController:_dirNavigationController
                        animated:YES
                      completion:nil];
+
+    
 }
 
 #pragma mark -

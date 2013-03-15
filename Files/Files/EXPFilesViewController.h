@@ -15,4 +15,8 @@
 - (IBAction)closeKeyboard:(id)sender;
 - (IBAction)openDirectory:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
+
+@property (strong, nonatomic) IBOutlet UIToolbar *naviButtonContainer;
+
 @end
