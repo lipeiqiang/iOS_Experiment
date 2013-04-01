@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zluipagecontroll</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // ページコントロール
+    CGRect pageControllFrame = CGRectMake(0, 0, baseBounds.size.width, 20);
+    _pageControll = [[UIPageControl alloc] initWithFrame:pageControllFrame];
+    _pageControll.backgroundColor = [UIColor colorWithWhite:0 alpha:0.75f];
+    _pageControll.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [_pageControll addTarget:self
+                      action:@selector(pageControllValueChanged:)
+            forControlEvents:UIControlEventValueChanged];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CF7D770F-5721-4B18-A342-323ADC3A3245</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ZL UIPageControll</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

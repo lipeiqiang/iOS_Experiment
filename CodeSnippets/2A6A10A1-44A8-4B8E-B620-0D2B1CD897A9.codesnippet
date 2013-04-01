@@ -9,19 +9,32 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // Navigation Item
-    UIBarButtonItem *openDocButton = [[UIBarButtonItem alloc] initWithTitle:@"doc"
-                                                                      style:UIBarButtonItemStylePlain
-                                                                     target:self
-                                                                     action:nil];
-    
-    UIBarButtonItem *openCacheButton = [[UIBarButtonItem alloc] initWithTitle:@"cache"
-                                                                        style:UIBarButtonItemStylePlain
-                                                                       target:self
-                                                                       action:nil];
-    
-    NSArray *rightBarButtonItems = @[openDocButton, openCacheButton];
-    [_navigationBar.topItem setRightBarButtonItems:rightBarButtonItems];</string>
+	<string>// BarButton Items
+NSMutableArray *barButtonItems = [[NSMutableArray alloc] init];
+
+// &lt;#1#&gt;ボタン
+UIBarButtonItem *&lt;#button1#&gt; = [[UIBarButtonItem alloc] initWithTitle:@"&lt;#title1#&gt;"
+                                                                style:UIBarButtonItemStyleBordered
+                                                               target:self
+                                                               action:nil];
+[barButtonItems addObject:&lt;#button1#&gt;];
+
+// スペーサー
+UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                           target:nil
+                                                                           action:nil];
+[barButtonItems addObject:flexSpace];
+
+// &lt;#2#&gt;ボタン
+UIBarButtonItem *&lt;#button2#&gt; = [[UIBarButtonItem alloc] initWithTitle:@"&lt;#title2#&gt;"
+                                                                style:UIBarButtonItemStyleBordered
+                                                               target:self
+                                                               action:nil];
+[barButtonItems addObject:&lt;#button2#&gt;];
+
+//    [_navigationBar.topItem setRightBarButtonItems:rightBarButtonItems];
+//    [_toolBar setItems:barButtonItems animated:NO];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2A6A10A1-44A8-4B8E-B620-0D2B1CD897A9</string>
 	<key>IDECodeSnippetLanguage</key>

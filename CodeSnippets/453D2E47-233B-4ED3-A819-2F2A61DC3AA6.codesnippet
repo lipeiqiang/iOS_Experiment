@@ -3,28 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zluibutton</string>
+	<string>zluitoolbar</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:@"&lt;#hoge#&gt;" forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:17];
-        button.frame = CGRectMake(10, 10, 73, 44);
-[button addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
+	<string>    // ツールバー
+    // CGRect baseBounds = self.view.bounds;
+    CGRect toolBarFrame = CGRectMake(0, 0, baseBounds.size.width, 44);
+    toolBarFrame.origin.y = baseBounds.size.height - toolBarFrame.size.height;
+    _toolBar = [[UIToolbar alloc] initWithFrame:toolBarFrame];
+    _toolBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    _toolBar.items = barButtonItems;
+    [self.view addSubview:_toolBar];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C432DD7-5BD7-45F6-873A-47EE67234891</string>
+	<string>453D2E47-233B-4ED3-A819-2F2A61DC3AA6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ZL UIButton</string>
+	<string>ZL UIToolBar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
