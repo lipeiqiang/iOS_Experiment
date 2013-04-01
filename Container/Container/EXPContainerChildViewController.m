@@ -8,11 +8,24 @@
 
 #import "EXPContainerChildViewController.h"
 
+static NSUInteger _sequentialPageNo = 0;
+
 @interface EXPContainerChildViewController ()
 
 @end
 
-@implementation EXPContainerChildViewController
+@implementation EXPContainerChildViewController {
+    NSUInteger _pageNo;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _pageNo = _sequentialPageNo++;
+    }
+    return self;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,33 +40,17 @@
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor whiteColor];
     
-    
-    {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:@"prev" forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:17];
-        button.frame = CGRectMake(10, 10, 73, 44);
-        [button addTarget:self action:@selector(prevButtonDidTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-    }
-    
-    {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:@"next" forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:17];
-        button.frame = CGRectMake(100,10,73,44);
-        [button addTarget:self action:@selector(nextButtonDidTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-    }
-    
-    {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:@"remove" forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:17];
-        button.frame = CGRectMake(200,10,73,44);
-        [button addTarget:self action:@selector(removeFromParentViewController) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-    }
+    CGRect baseBounds = self.view.bounds;
+    CGRect labelFrame = baseBounds;
+    labelFrame.origin.x = 20;
+    labelFrame.origin.y = 20;
+    labelFrame.size.width = baseBounds.size.width - 40;
+    labelFrame.size.height = baseBounds.size.height - 40;
+    UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
+    label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+    label.text = [NSString stringWithFormat:@"%d", _pageNo];
     
 }
 
