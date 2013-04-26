@@ -29,8 +29,13 @@
 }
 
 - (IBAction)openTableAAction:(id)sender {
-    UIViewController *controller = [[EXPTableAViewController alloc] initWithNibName:@"EXPTableAViewController" bundle:nil];
+    UITableViewController *controller = [[EXPTableAViewController alloc] initWithNibName:@"EXPTableAViewController" bundle:nil];
     [self.navigationController pushViewController:controller animated:YES];
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 70)];
+    headerView.backgroundColor = [UIColor blueColor];
+    controller.tableView.tableHeaderView = headerView;
+
 }
 - (IBAction)openTableBAction:(id)sender {
     UIViewController *controller = [[EXPTableBViewController alloc] init];

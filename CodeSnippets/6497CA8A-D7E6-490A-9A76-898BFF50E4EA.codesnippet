@@ -9,7 +9,9 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
+	<string>//    [self refleshDebugInfo:nil];
+}
+
 // デバッグ用ラベル
 - (void)refleshDebugInfo:(NSTimer *)timer {
     const NSTimeInterval refleshInterval = 0.25f;
@@ -21,6 +23,7 @@
         debugInfoLabel = [[UILabel alloc] init];
         debugInfoLabel.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
         debugInfoLabel.textColor = [UIColor whiteColor];
+        debugInfoLabel.numberOfLines = 0;
         [baseView addSubview:debugInfoLabel];
     }
     
@@ -33,19 +36,8 @@
         [[NSRunLoop mainRunLoop] addTimer:debugTimer forMode:NSRunLoopCommonModes];
     }
     
-    // debug info
-    NSInteger thumbCount = 0;
-    for (UIView *view in self.tableView.subviews) {
-        if ([view isKindOfClass:[BLBookShelfThumbnailImage class]]) {
-            thumbCount++;
-        }
-    }
+    NSMutableString *debugInfoText = [NSMutableString stringWithString:@""];
     
-    /* import hedder
-     #import &lt;mach/host_info.h&gt;
-     #import &lt;mach/mach_init.h&gt;
-     #import &lt;mach/mach_host.h&gt;
-     */
     float (^getFreeMem)(void) = ^{
         struct vm_statistics a_vm_info;
         mach_msg_type_number_t a_count = HOST_VM_INFO_COUNT;
@@ -54,11 +46,33 @@
         return size;
     };
     float freeMem = getFreeMem();
+    NSString *freeMemtext = [NSString stringWithFormat:@"Free Memory:%0.1fMB\n", freeMem];
+    [debugInfoText appendString:freeMemtext];
     
-    NSString *text = [NSString stringWithFormat:@"thumbs:%d free:%0.1fMB", thumbCount, freeMem];
-    debugInfoLabel.text = text;
+    NSInteger thumbCount = 0;
+    for (UIView *view in self.tableView.subviews) {
+        if ([view isKindOfClass:[BLBookShelfThumbnailImage class]]) {
+            thumbCount++;
+        }
+    }
+    NSString *thumbCountText = [NSString stringWithFormat:@"ThumbnailImages:%d\n", thumbCount];
+    [debugInfoText appendString:thumbCountText];
     
-    CGRect labelFrame = CGRectMake(0, baseView.bounds.size.height - 60, baseView.bounds.size.width, 20);
+    NSString *thumbCacheText = [NSString stringWithFormat:@"ThumbImageCacheCount:%d\n", thumbnailCache.count];
+    [debugInfoText appendString:thumbCacheText];
+    
+    NSString *frameText = [NSString stringWithFormat:@"frame:%@\n", NSStringFromCGRect(self.tableView.frame)];
+    [debugInfoText appendString:frameText];
+    NSString *contentSizeText = [NSString stringWithFormat:@"contentSize:%@\n", NSStringFromCGSize(self.tableView.contentSize)];
+    [debugInfoText appendString:contentSizeText];
+    NSString *offsetText = [NSString stringWithFormat:@"offset:%@\n", NSStringFromCGPoint(self.tableView.contentOffset)];
+    [debugInfoText appendString:offsetText];
+    NSString *contentInsetText = [NSString stringWithFormat:@"inset:%@\n", NSStringFromUIEdgeInsets(self.tableView.contentInset)];
+    [debugInfoText appendString:contentInsetText];
+    
+    debugInfoLabel.text = debugInfoText;
+    
+    CGRect labelFrame = CGRectMake(0, baseView.bounds.size.height - 220, baseView.bounds.size.width, 180);
     debugInfoLabel.frame = labelFrame;
     [baseView bringSubviewToFront:debugInfoLabel];
     

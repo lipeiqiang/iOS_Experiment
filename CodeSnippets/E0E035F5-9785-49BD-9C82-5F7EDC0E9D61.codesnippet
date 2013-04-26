@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zlkvo</string>
+	<string>zldbgkvo</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+	<string>[&lt;#self#&gt; addObserver:self forKeyPath:@"&lt;#frame#&gt;" options:NSKeyValueObservingOptionOld context:nil];
+ return self;
+ }
+ 
+ - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-//    [labelTitle addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
-
-    
-    if ([keyPath isEqualToString:@"frame"]) {
-        CGRect frame = [[object valueForKeyPath:@"frame"] CGRectValue];
-        BLLog(@"%@ %@ %@",NSStringFromClass([object class]), keyPath , NSStringFromCGRect(frame));
+    if ([keyPath isEqualToString:@"&lt;#frame#&gt;"]) {
+        NSLog(@"old:%@ new:%d object:%@", change[@"old"], [object isHidden], object);
     }
 }
 </string>
@@ -25,7 +25,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ZL KVO</string>
+	<string>ZL Debug KVO</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

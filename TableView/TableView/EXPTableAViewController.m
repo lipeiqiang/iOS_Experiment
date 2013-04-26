@@ -28,7 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
  
@@ -41,6 +42,9 @@
     [_datas addObject:[NSDictionary dictionaryWithObjectsAndKeys:@"hoge3", @"title", @"hogehoge3", @"text", nil]];
     [_datas addObject:[NSDictionary dictionaryWithObjectsAndKeys:@"hoge4", @"title", @"hogehoge4", @"text", nil]];
     [_datas addObject:[NSDictionary dictionaryWithObjectsAndKeys:@"hoge5", @"title", @"hogehoge5", @"text", nil]];
+    
+    UIEdgeInsets inset = UIEdgeInsetsMake(30, 0, 0, 0);
+    self.tableView.contentInset = inset;
     
 }
 
